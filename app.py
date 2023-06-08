@@ -5,8 +5,9 @@ from telegram.ext import CommandHandler
 from dictionary import get_info
 
 telegram_bot_token = "6259661929:AAG28vS_-NGCkWydsKuDdKG7J1NrNzc4Drg"
+token = telegram_bot_token
 
-updater = Updater(token=telegram_bot_token, use_context=True)
+updater = Updater(token, use_context=True)
 dispatcher = updater.dispatcher
 
 
